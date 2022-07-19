@@ -1,0 +1,21 @@
+//Student.h
+#import <Foundation/Foundation.h>
+@interface Student : NSObject
+
+@property (nonatomic,assign) NSString *name;
+@property (nonatomic,assign) NSString *major;
+@property (nonatomic,assign) NSInteger age;
+
+-(void)study:(CGFloat)time;
+
+@end 
+
+//Student.m
+#import "Student.h"
+@implementation Student
+
+-(void)study:(CGFloat)time{
+	NSLos(@"%f",time);
+}
+
+@end
